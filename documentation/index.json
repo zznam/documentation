@@ -18,6 +18,12 @@
                     "subpath": "os.adoc"
                 },
                 {
+                    "title": "Raspberry Pi Imager",
+                    "description": "Install an operating system onto boot media with Raspberry Pi Imager",
+                    "image": "full-sized/imager.png",
+                    "subpath": "imager.adoc"
+                },
+                {
                     "title": "Configuration",
                     "description": "Configuring your Raspberry Pi's settings",
                     "image": "full-sized/Configuration.png",
@@ -40,12 +46,6 @@
                     "description": "Accessing your Raspberry Pi remotely",
                     "image": "full-sized/Remote-Access.png",
                     "subpath": "remote-access.adoc"
-                },
-                {
-                    "title": "Camera software",
-                    "description": "Software and libraries for Raspberry Pi camera hardware",
-                    "image": "full-sized/Camera.png",
-                    "subpath": "camera_software.adoc"
                 },
                 {
                     "title": "AI software",
@@ -157,14 +157,44 @@
                     "subpath": "monitor.adoc"
                 },
                 {
-                    "title": "Camera",
+                    "title": "Camera Module hardware",
                     "description": "Raspberry Pi camera boards",
                     "image": "full-sized/Camera.png",
                     "subpath": "camera.adoc"
                 },
                 {
+                    "title": "Camera Module software and installation",
+                    "description": "Software and libraries for Raspberry Pi camera hardware",
+                    "image": "full-sized/Camera-Software.png",
+                    "subpath": "camera-software.adoc"
+                },
+                {
+                    "title": "Camera Module 2",
+                    "description": "An 8-megapixel camera available in standard and NoIR versions",
+                    "image": "full-sized/Camera-Module-2.png",
+                    "subpath": "camera-module-2.adoc"
+                },
+                {
+                    "title": "High Quality Camera",
+                    "description": "A 12-megapixel camera for use with external lenses",
+                    "image": "full-sized/High-Quality-Camera.png",
+                    "subpath": "high-quality-camera.adoc"
+                },
+                {
+                    "title": "Camera Module 3",
+                    "description": "A 12-megapixel camera available in standard and NoIR versions, with standard and wide FoV",
+                    "image": "full-sized/Camera-Module-3.png",
+                    "subpath": "camera-module-3.adoc"
+                },
+                {
+                    "title": "Global Shutter Camera",
+                    "description": "A 1.6-megapixel camera that uses a global shutter mechanism",
+                    "image": "full-sized/Global-Shutter-Camera.png",
+                    "subpath": "global-shutter-camera.adoc"
+                },
+                {
                     "title": "AI Camera",
-                    "description": "An AI Camera for your Raspberry Pi",
+                    "description": "AI camera for your Raspberry Pi",
                     "image": "full-sized/ai-cam.png",
                     "subpath": "ai-camera.adoc"
                 },
@@ -297,7 +327,7 @@
                 {
                     "title": "Raspberry Pi Connect",
                     "description": "Connect to your Raspberry Pi from your browser",
-                    "image": "full-sized/Connect-BIG.png",
+                    "image": "full-sized/Connect.png",
                     "subpath": "connect.adoc"
                 },
                 {
@@ -356,5 +386,28 @@
             "from_json": "picosdk_index.json",
             "directory": "pico-sdk"
         }
-    ]
+    ],
+    "related": {
+        "title": "Related resources",
+        "subitems": [
+            {
+                "title": "Product Information Portal",
+                "description": "Documents, reports, and notices for all Raspberry Pi products",
+                "image": "full-sized/PIP.png",
+                "url": "https://pip.raspberrypi.com/"
+            },
+            {
+                "title": "Tutorials",
+                "description": "Hands-on hardware and software tutorials",
+                "image": "full-sized/Tutorials.png",
+                "url": "https://www.raspberrypi.com/tutorials/"
+            },
+            {
+                "title": "Forums",
+                "description": "User and product support forums",
+                "image": "full-sized/Forums.png",
+                "url": "https://forums.raspberrypi.com/"
+            }
+        ]
+    }
 }

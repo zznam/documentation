@@ -53,7 +53,9 @@ If `1` then `sudo halt` will run in a lower power mode until either GPIO3 or GLO
 
 This setting is not relevant for Raspberry Pi 5 and later, Raspberry Pi Compute Module 5 and later, and Raspberry Pi 500 and later, because the xref:raspberry-pi.adoc#power-button[dedicated power button] can always be used to wake from `HALT` or `STANDBY`.
 
-Default: `1`
+The default bootloader images for Raspberry Pi 4, Raspberry Pi 400, and Raspberry Pi Compute Module 4 set this value to `1` in the bootloader config. A bootloader config that doesn't set `WAKE_ON_GPIO` uses `0`.
+
+Default: `0`
 
 [[POWER_OFF_ON_HALT]]
 ==== `POWER_OFF_ON_HALT`
@@ -479,15 +481,7 @@ The Raspberry Pi Imager application is configured with a JSON file downloaded at
 
 NOTE: Using `IMAGER_REPO_URL` to configure a network install with the embedded Raspberry Pi Imager isn't currently supported because of a https://github.com/raspberrypi/rpi-imager/issues/894[known issue].
 
-You can also change the URL of the JSON file used by the Raspberry Pi Imager application to get it to offer your own images by one of the following methods:
-
-* Pass the `--repo` argument when starting Imager, for example: `rpi-imager --repo https://downloads.raspberrypi.com/os_list_imagingutility_v4.json`
-* In the Raspberry Pi Imager UI.
-.. Go to the **App Options** dialog box.
-.. For **Content Repository**, select **Edit**.
-** To use a JSON file on your computer, choose **Use custom file** and browse to the file location.
-** To use a JSON file hosted at a URL, choose **Use custom URL** and enter the URL.
-.. Click **Apply & Restart**. Imager resets your device and OS selections, and returns to the **Device** tab.
+You can also change the JSON file used by the Raspberry Pi Imager application on your computer so that it offers your own images. For instructions, see xref:imager.adoc#custom-repositories[Use a custom image repository].
 
 [[NET_INSTALL_ENABLED]]
 ==== `NET_INSTALL_ENABLED`
